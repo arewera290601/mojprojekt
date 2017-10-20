@@ -1,0 +1,56 @@
+
+/*
+    font-family: arial, tahoma, sans-seri;
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.50em; =ctrl+e
+*/
+
+body {
+
+    font: normal normal 12pt/1.50em arial, tahoma, seans-seri; 
+}
+
+h1 {
+    font-size: 300%;
+}
+h2 {
+    font-size: 250%;
+}
+p {
+    font-size: 14pt;
+    line-height: 1.5em;
+}
+.czerwony {
+    color: red;
+
+
+}
+.pogrubiony {
+    font-weight: bold;
+}
+.pochylony {
+    font-style: italic;
+}
+
+
+.wyrozniony {
+    color: #FF00C4;
+    font-weight: bold;
+    font-style: italic;
+}
+p.srodek {
+    clear: both;    
+    text-align: center;
+}
+img {
+    float: right;
+}
+
+
+
+
+
+
+
