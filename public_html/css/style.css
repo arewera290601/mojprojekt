@@ -9,8 +9,25 @@
 
 body {
 
-    font: normal normal 12pt/1.50em arial, tahoma, seans-seri; 
+    font: normal normal 12pt/1.30em arial, tahoma, sans-serif; 
 }
+.header {
+    padding: 20px;
+    border: 10px solid green;
+    margin: 30px;
+    border-bottom: 10px dashed red;
+    
+}
+#header img {
+    border: 10px solid yellow;
+    
+}
+.header img {
+    display: block;
+    float: none;
+   
+}
+ 
 
 h1 {
     font-size: 300%;
@@ -54,3 +71,10 @@ img {
 
 
 
+
+#header {
+    padding: 40px 20px 10px 5px;
+    margin: 30px 20px 10px 5px;
+    border-bottom: 10px dotted blue;
+
+}
