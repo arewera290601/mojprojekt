@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-12T12:20:49+01:00
+
+====== Home ======
+Created piątek 12 styczeń 2018
+
+znak $ zawsze zaczynamy w joery następnie nawiasy () w nich jest selektor z działaniem potem. (kropka)
+pózniej jakaś akcja 
+$(selektor).akcja(function()(funkcja anonimowa){działania;});
+spoób selekcji w jquery:
+1. slekcja z identyfikatorem 
+ $('#login').click( () => {
+	$('#loginMenu').toggle()
+})); 
+$("p").text
+
+===== Dołączanie JQuery do strony =====
+CDN jest to duzy, rozproszony system doatsrczania treści do wielu centrów danych i punktów wymiany ruchu w internecie. np. na w3school (znajdziesz)        
+
+===== Metody =====
+.hide(), ukrywa
+.show(), pokazuje
+ .fadeIn(), 
+.fadeOut()    
+.toggle() pokazuje i ukrywa
