@@ -1,0 +1,45 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-22T10:00:08+01:00
+
+====== Baza danych ======
+Created poniedziałek 22 styczeń 2018
+https://www.epodreczniki.pl/reader/c/275377/v/latest/t/student-canon/m/iLmtoVARjI#iLmtoVARjI_d5e182
+
+treść: uporządkowany zbiór informacji 
+
+==== Projektowanie bazy danych ====
+1. tabela
+2. pola typ danych czyli liczby i tekst
+3. rekord= zbiór pól w obrębie jednej tabeli 
+
+język SQL- strukturalny język zapytań stosowany w bazie danych
+
+Dobrze zaprojektowana baza danych powinna zajmować minimum miejsca, minimum pamięci, dane spójne i wydajna.
+
+Relacyjna baza danych powstaje poprzez przeadnalizoanie bazy danych i wtedy okazuje zie że tabele możana połączyć w kilku tabelach i wiążemy je relacjami. Składa się z awielu tabel połączonych relacjami.
+
+=== Progarmy ===
+Microsoft Access (.accdb)
+[[LibreOffice]] Base(.odb)
+SQLiteStudio(.db, .sqlite)
+
+===== System/Silnik baz danych =====
+[[MySQL]]
+[[MariaDB]]
+[[PostgreSQL]]
+Oracle
+SQLite
+
+===== Typy danych =====
+
+==== Liczbowe ====
+integer- liczby całkowite
+float, real, decimal- liczby zmiennoprzecinkowe
+
+==== Tekstowe ====
+text[20], varchair[20 znaków(wielkość)], string
+
+==== DAta i czas ====
+date- data, np. w formacie ISO, np. 2015-01-16
+DateTime-tylko wtedy data i czas 
