@@ -17,7 +17,9 @@ język SQL- strukturalny język zapytań stosowany w bazie danych
 
 Dobrze zaprojektowana baza danych powinna zajmować minimum miejsca, minimum pamięci, dane spójne i wydajna.
 
-Relacyjna baza danych powstaje poprzez przeadnalizoanie bazy danych i wtedy okazuje zie że tabele możana połączyć w kilku tabelach i wiążemy je relacjami. Składa się z awielu tabel połączonych relacjami.
+Relacyjna baza danych powstaje poprzez przeadnalizoanie bazy danych i wtedy okazuje zie że tabele możana połączyć w kilku tabelach i wiążemy je relacjami. Składa się z awielu tabel połączonych relacjami. 
+1. klucz główny (ang. primary key)- pole, którego wartość jest unikalna w obrębie tabeli tzn. że klucz główny jednoznacznie identyfikuje rekord tabeli
+2. klucz obcy (ang. secondary key, REFERENCEStable_name)- klucz obcy pobiera wartości  z klucza głównego, łączy tabele zależne z tabelą główną
 
 === Progarmy ===
 Microsoft Access (.accdb)
@@ -40,6 +42,12 @@ float, real, decimal- liczby zmiennoprzecinkowe
 ==== Tekstowe ====
 text[20], varchair[20 znaków(wielkość)], string
 
-==== DAta i czas ====
+==== Data i czas ====
 date- data, np. w formacie ISO, np. 2015-01-16
 DateTime-tylko wtedy data i czas 
+
+===== Typy relacji =====
+- relacje jednego do wielu
+
+
+
