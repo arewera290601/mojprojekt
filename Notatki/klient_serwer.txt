@@ -1,0 +1,59 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-02T12:15:09+01:00
+
+====== Klient serwer ======
+Created piątek 02 luty 2018
+
+  zainstaluj power shell
+ wikipedia- HTTP
+
+====== Serwer - "komputer" udostępniający zasoby ======
+ 
+Jakie zasoby można udostępniać?
+Udostępnia USŁUGI (ang. services, lista: [[/etc/services)]]
+
+1.DNS- Domain Name System, port 53, zamiana nazw 	   hostów na adresy IP, polecenie: ping
+2. HTTP- HyperText Transfer Protocol, komunikacja w zakresie stron WWW, port 80
+3. FTP- File Transfer  Procotol, port 20,21
+4. SSH- Secure Shell, port 22
+
+**Klient-** "komputer" korzystający z usług udostępnianych przez serwer, np.  przeglądaraka WWW albo klient chat
+
+**Protokół- **"język" porozumiewania się klienta z serewerem, protokoły definiowane są w dokumentach RFC
+
+**Adres** **IP**, np. publiczny 221.34.2.10
+
+**Port- **liczba naturalna identyfikująca usługe na serwerze, well known ports 0-1024, zob. etc/services
+
+===== Lokalny serwer HTTP =====
+python -m SimpleHTTPServer
+python3 -m http.server
+
+php -S localhost:8000
+
+**Domyślny nazwa serwera:** port
+localhost:8000
+127.0.0.1:8000
+
+**Domyślny zasób:** index.html, 
+
+przykłądowa analiza 
+URI => URL
+http://lo1.sandomierz.pl/szukaj?words=parnas&search=
+
+http:// - protokół
+lo1.sandomierz.pl - (pełnodomenowa) nazwa serwera
+[[/szukaj]] - zasób na serwerze lub może byc w jakimś podkatalogu np. [[/anliety/szukaj]]
+[[http://lo1.sandomierz.pl/szukaj?words=parnas&search=|words=parnas&search=]]
+?- poczatek listy parametrów
+words=parnas - parametr w formacie nazwa = wartość
+& - znak służący rozdzielaniu parametrów
+search= - 
+
+http:// = HTTP + SSL {szyfrowanie, }
+https://www.google.pl/search?source=hp&ei=dVh0WtOTMYSXsAGDlZvgAw&q=apache&oq=apache&gs_l=psy-ab.3..0l2j0i131k1j0l7.1153.2680.0.3231.6.5.0.1.1.0.148.670.0j5.5.0....0...1c..64.psy-ab..0.6.673....0._p7pWrFgtWI
+
+
+
+

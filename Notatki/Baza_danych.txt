@@ -23,13 +23,13 @@ Relacyjna baza danych powstaje poprzez przeadnalizoanie bazy danych i wtedy okaz
 
 === Progarmy ===
 Microsoft Access (.accdb)
-[[LibreOffice]] Base(.odb)
+LibreOffice Base(.odb)
 SQLiteStudio(.db, .sqlite)
 
 ===== System/Silnik baz danych =====
-[[MySQL]]
-[[MariaDB]]
-[[PostgreSQL]]
+MySQL
+MariaDB
+PostgreSQL
 Oracle
 SQLite
 

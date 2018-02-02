@@ -1,4 +1,5 @@
-
+var x, y; // współrzędne obiektu
+var krok = -1;
 function setup() {
   // put setup code here
   createCanvas(600, 600);

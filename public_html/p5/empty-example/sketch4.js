@@ -1,4 +1,5 @@
-
+var length = 30;
+x = y = 100;
 function setup() {
   x = y = 30
   // put setup code here
