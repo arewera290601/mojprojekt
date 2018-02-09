@@ -9,7 +9,7 @@ Created piątek 02 luty 2018
  wikipedia- HTTP
 
 ====== Serwer - "komputer" udostępniający zasoby ======
- 
+
 Jakie zasoby można udostępniać?
 Udostępnia USŁUGI (ang. services, lista: [[/etc/services)]]
 
@@ -36,9 +36,9 @@ php -S localhost:8000
 localhost:8000
 127.0.0.1:8000
 
-**Domyślny zasób:** index.html, 
+**Domyślny zasób:** index.html,
 
-przykłądowa analiza 
+przykłądowa analiza
 URI => URL
 http://lo1.sandomierz.pl/szukaj?words=parnas&search=
 
@@ -46,14 +46,10 @@ http:// - protokół
 lo1.sandomierz.pl - (pełnodomenowa) nazwa serwera
 [[/szukaj]] - zasób na serwerze lub może byc w jakimś podkatalogu np. [[/anliety/szukaj]]
 [[http://lo1.sandomierz.pl/szukaj?words=parnas&search=|words=parnas&search=]]
-?- poczatek listy parametrów
+?- poczatek listy parametrów (metoda get)
 words=parnas - parametr w formacie nazwa = wartość
 & - znak służący rozdzielaniu parametrów
-search= - 
+search= -
 
 http:// = HTTP + SSL {szyfrowanie, }
 https://www.google.pl/search?source=hp&ei=dVh0WtOTMYSXsAGDlZvgAw&q=apache&oq=apache&gs_l=psy-ab.3..0l2j0i131k1j0l7.1153.2680.0.3231.6.5.0.1.1.0.148.670.0j5.5.0....0...1c..64.psy-ab..0.6.673....0._p7pWrFgtWI
-
-
-
-
