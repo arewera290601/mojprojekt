@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-02T12:10:58+01:00
+
+====== Bootstrap4 ======
+Created piątek 02 marzec 2018
+
+Twórcy bootstrapa podzielili wszystkie urządzenia na 5 kategorii 
+1) extra small (xs)<576px 
+2) small (sm) >=576px
+3) medium (md) >=768px
+4) large (lg) >= 992px
+5) extra large (xl) >=1200 pxs
+ 
+**col** **max** **12**
+http://getbootstrap.com/docs/4.0/utilities/spacing/
+margines klasa zacyzna sie od **m** (odległośc od siebie obrazków)
+padding klasa zaczyna się od **p **(margines wewnętrzny) 
+prawy i lewy margines x
+
+
