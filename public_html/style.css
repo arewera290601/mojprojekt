@@ -1,0 +1,10 @@
+  body {
+    background-image: url("pies.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  /* style uzytkowania */
+  .mark, mark {
+    background-color: rgb(209, 95, 109);
+  }
