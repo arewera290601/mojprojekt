@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-19T09:54:03+01:00
+
+====== Grafika ======
+Created poniedziałek 19 marzec 2018
+
+0xFFFFFFF PO 0X występuje cykl szesnastkowy
+0xFFFFFF-kolor biały
+0x000000-kolor czarny 
+ żeby zapisać informacje o jednej składowej koloru trzeba 1 bajt
+a żeby cała 4 batjów
+cmyk i rgb są odwrotne 
+
+cmyk wartości od 1 do 100
+
+===== Model HSB =====
+hue-barwa(odcień)
+może być wyrażona od 0 do 360
+S może być od 0 do 100
+B (jasność) możebyc od 0 do 100
+
+Przestrzen kolorów  zmienia sie w zależności od systemu 
+
+===== Grafika rastrowa =====
+budowana z punktów (kwadraty, pixele) na monitorze komputera drukarki lub innych urządzeń wyjściowych  
+EDYTORY: Adobe Photoshop, paint Shop pro, GIMP, MyPaint, krita (najlepszy malarski program)
+PSD -stworzony w photoshopie
+XCF- w GIMP
+
+JPEG- kompresja stratna 
+
+zainstaluj gimpa !!!!!!!!!!!!!
