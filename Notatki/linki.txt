@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-04-06T12:59:44+02:00
+
+====== linki ======
+Created piątek 06 kwiecień 2018
+
+https://html.spec.whatwg.org/multipage/
+
+
