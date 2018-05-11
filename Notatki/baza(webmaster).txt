@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-05-11T12:34:32+02:00
+
+====== baza(webmaster) ======
+Created piątek 11 maja 2018
+
+sqlite3.exe szkola.db < szkola.sql
+sqlite3.exe szkola.db
+.tables
+.schema
+.quit wyjdz 
