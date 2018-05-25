@@ -10,7 +10,7 @@ def dane_z_pliku(nazwa_pliku):
     with open(nazwa_pliku, newline='', encoding='utf-8') as plik:
         tresc = csv.reader(plik, delimiter='\t')
         for rekord in tresc:
-            rekord = [x.strip() for x in rekord]
+            rekord = [x.strip() for x in rekord]  # usuwanie spacji
             dane.append(rekord)
     return dane
 
