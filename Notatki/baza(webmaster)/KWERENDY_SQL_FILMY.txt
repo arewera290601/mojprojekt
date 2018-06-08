@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-06-08T12:11:38+02:00
+
+====== KWERENDY SQL FILMY python ======
+Created piątek 08 czerwca 2018
+
+WYBRANIE WSZYSTKICH REKORDÓW Z JAKIEJS TABELI (SELECT * FROM filmy;)
+
+wybranie daneego pola np. SELECT name, genre FROM filmy;
+
+wyświetlanie w zamian aliasowanie SELECT name AS tytuł, genre AS gatunek FROM filmy;
+
+pokazuje specjaslne pojedyncze 
+SELECT DISTINCT genre FROM filmy;
+
+UPORZĄDKOWANIE WEDŁUG ROSNĄCEJ OCENY FILMY = SELECT * FROM filmy WHERE rating > 8.5 ORDER BY rating ASC;
+A MALEJĄCO DESC  
+CIĄG PUSTY ('')
+SELECT name, genre FROM filmy WHERE genre = '';
+SELECT * FROM filmy WHERE rating IS NULL;
+SELECT * FROM filmy WHERE rating > 5 AND rating < 7;
+SELECT * fROM FILMY WHERE year BETWEEN 1970 AND 1979 AND rating > 5;ORDER BY
+SELECT * FROM filmy WHERE rating BETWEEN 5 AND 7;
+SELECT name, rating FROM filmy WHERE name LIKE "Se_en"
+ SELECT name, rating FROM filmy WHERE name LIKE "%man%";
+SELECT * fROM FILMY WHERE year BETWEEN 1990 AND 1999 AND genre = 'romance' ORDER BY rating DESC LIMIT 3;
+SELECT * fROM FILMY WHERE year BETWEEN 1990 AND 1999 AND genre = 'romance' ORDER BY rating DESC LIMIT 2, 3; -  omija dwa pierwsze rekordy i bierze 3 kolejne 
+
+
+
+
+_ jeden dowolny znak
+% dowolna ilość znakow
+
+roznicca między BETWEEN AND w liczbach obu stronnie domknięty a w literach ta litera dodana druga jest otwarty
+
