@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-06-11T10:20:34+02:00
+
+====== python infa podstawa ======
+Created poniedziałek 11 czerwca 2018
+
+zbior od listy w zbiorze nie mogą sie powtarzać elementy niepowtarzalane a w liście wartości powtarzają się 

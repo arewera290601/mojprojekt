@@ -10,3 +10,4 @@ sqlite3.exe szkola.db
 .tables
 .schema
 .quit wyjdz 
+
