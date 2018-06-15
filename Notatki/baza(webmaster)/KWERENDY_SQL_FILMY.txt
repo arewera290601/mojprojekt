@@ -26,7 +26,18 @@ SELECT name, rating FROM filmy WHERE name LIKE "Se_en"
  SELECT name, rating FROM filmy WHERE name LIKE "%man%";
 SELECT * fROM FILMY WHERE year BETWEEN 1990 AND 1999 AND genre = 'romance' ORDER BY rating DESC LIMIT 3;
 SELECT * fROM FILMY WHERE year BETWEEN 1990 AND 1999 AND genre = 'romance' ORDER BY rating DESC LIMIT 2, 3; -  omija dwa pierwsze rekordy i bierze 3 kolejne 
-
+SELECT name, downloads FROM fakeapps WHERE downloads < (SELECT AVG(downloads) FROM fakeapps);
+SELECT name, downloads FROM fakeapps WHERE downloads < (SELECT AVG(downloads) FROM fakeapps) ORDER BY downloads ASC LIMIT 5;
+DWIE WYŻEJ TO FUNKCJE AGREGUJĄCE
+AVG() wylicza średnią
+SELECT ROUND(AVG(price),2) FROM fakeapps;- ZAKRĄGLA W GÓRĘ SREDNIĄ Z AVG
+COUNT(*)- zlicz wszystkie rekordy
+SELECT COUNT(*) FROM fakeapps WHERE downloads > (SELECT AVG(downloads) FROM fakeapps);
+ SELECT price, COUNT(*) FROM fakeapps; - zlicza wszystkie reklordy
+ SELECT price, COUNT(*) FROM fakeapps WHERE downloads > 20000 GROUP BY price; - kwerenda agreguje i grupuje (lzlicza)
+SELECT category, SUM(downloads) FROM fakeapps GROUP BY category; - grupuje
+SELECT category, SUM(downloads) AS suma FROM fakeapps GROUP BY category ORDER BY suma DESC;
+SELECT category, price, AVG(downloads) FROM fakeapps GROUP BY category, price; (CATEGROTY I PRICE PO GROUP BY MOGĘ ZASTAPIĆ 1, 2)
 
 
 
