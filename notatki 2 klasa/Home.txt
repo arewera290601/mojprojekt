@@ -1,0 +1,70 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-06T08:06:34+02:00
+
+====== Home ======
+Created czwartek 06 września 2018
+
+kod binarny- ciąg 1 i 0 - język maszynowy
+
+==== język programowania niskiego poziomu asemblery- ====
+mov ecx,50; 
+dec ecx; 
+push eax; 
+pop ecx; - mnemoniki;
+
+==== język programowania wysokiego poziomu- ====
+if(liczba_pkt>50)
+	 zaliczenie=true 
+else 
+	zaliczenie=false;
+lata 70 moemnt ważny bo powstały takie języki jak 
+C (1971)- używany dpo dziś wywodzi się z Fortan 
+C++ (1983)-ten język zdobył coś takiego jak obietowośc; dalej język aktualny i używany 
+Pascal (1970)- język służący do uczenia programowania
+
+1. Kompilator(kompilacja) to program napisany przez tworców danego języka który tekst zamienia na kod binarny; sprawdza także błędy i wg
+2. Linker(konsolidacja) łączy z kodem potrzebne do jego działania biblioteki i tworzy plik wykonywalny aplikacjie . Rozszerzenie .exe jest umowane i charakterystyczne dla systemu Windows.
+jeden problem to : jeżeli zkompilujemy i linkujemy aplikację na systemie Linux 64-bit to aplikacja nie zadziała w Windowsie lub 32-bitowej wersji czego kolwiek wiec trzeba kompilować i linkować we wszystkich bibliotekch 
+
+Kod żróðłowy jest inpretowany (JavaSript; java; python)- ich kod binarny jest tworzony w locie
+Są dwa rodzaje języków : kompilowane i interpretowane.
+
+===== Jak powstaje program: =====
+zadania programy:
+1. oblicznie pola
+2. obliczanie objętości
+3. .........
+Algorytm:
+1. pobierz promień
+2. oblicz pole
+3. wyświetl pole
+4. .....
+
+Strat
+pobierz r
+oblicz pole
+wyświetl pole ⇒ int main(){
+int}
+koniec
+
+
+===== Algorytm =====
+nazywamy skończony ciąg czynności przekształcający zbiór danych wejściowych na zbiór danych wyjściowych;
+
+Algorytmy, które wykonują działania matemaytyczne na danych liczbowych, nazywamy **algorytmami numerycznymi.**
+
+Algorytmy, w ktorych kolejnośc czynności jest zawsze taka sama i niezależna od wartości danych wejściowych, nazywamy **algorytmami sekwencyjnymi **lub inaczej **liniowe.**
+
+===== Elementy schematu blokowego: =====
+Blok graniczny - początek algorytmu
+Blok operacyjny- operacje zmieniające wartości zmiennych
+Blok wejścia/wyjścia- operacje wprowadzania i wyprowadxzania danych 
+Blok decyzyjny- wybór jendej z dwóch możliwych dróg działania.
+Blok graniczny- koniec algorytmu. 
+
+Specyfikacja problemu algorytmicznego  nazywamy dokładny opis zadania, które ma zostać rozwiązane, oraz podane danych wejściowych i danych wyjściowych wraz z ich typami.
+
+
+ 
+
