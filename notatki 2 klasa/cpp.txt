@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-07T13:43:43+02:00
+
+====== cpp ======
+Created piątek 07 września 2018
+
+bioblioteka standardowa <iostream>
+Podstawowe typy danych
+1. char- súży do przechowywania pojedynczych znaków (podstawowe znaki alfabetu angielskiego i liczby)- zajmuje w pamięci 1 bajt- zakres (-128)- typ całkowity
+2. int- rozmiar w bajtach 2,4 lub 8 zakres(32768)-typ całkowity
+3. long int- 4 bajty - zakres(2147483648)- typ całkowity
+4. float -typ zmiennoprzęcikowy 4 bajty zakres- 6 cyfr znaczących 
+5. duoble 8 bajtów- zakres- 10 cygr znaczących - typ zmiennoprzecinkowy
+6. bool- 1 bajt - zakres - true false - typ całkowity
