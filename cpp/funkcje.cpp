@@ -9,12 +9,15 @@ using namespace std;
 int dodaj(int a, int b){
     return a + b;
     }
+    
 int dodaj2(int a, int b){
     return a - b;
-    } 
+    }
+     
 int dodaj3(int a, int b){
     return a * b;
     }
+    
 int dodaj4(int a, int b){
     return a / b;
     }

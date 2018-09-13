@@ -6,10 +6,13 @@
 # zasięg zmiennych  może być lokalny lub globalny
 def dodaj(a, b):
     return a + b
+    
 def dodaj2(a, b):
     return a - b
+    
 def dodaj3(a, b):
     return a * b
+    
 def dodaj4(a, b):
     return a / b
 
