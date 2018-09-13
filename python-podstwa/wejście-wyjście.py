@@ -11,6 +11,7 @@ def main(args):
     print(a)
     b = int(input('Podaj 2. liczbę: '))
     print(b)
+
     
     print("Suma: ", a + b)
     print("Różnica: ", a - b)
