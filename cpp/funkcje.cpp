@@ -6,19 +6,19 @@
 
 using namespace std;
 
-int dodaj(int a, int b){
+int suma(int a, int b){
     return a + b;
     }
     
-int dodaj2(int a, int b){
+int roznica(int a, int b){
     return a - b;
     }
      
-int dodaj3(int a, int b){
+int iloczyn(int a, int b){
     return a * b;
     }
     
-int dodaj4(int a, int b){
+int iloraz(int a, int b){
     return a / b;
     }
 
@@ -36,10 +36,10 @@ int main(int argc, char **argv)
     cout << b << endl;
     
     
-    cout << "Suma: " << dodaj(a, b) << endl;
-    cout << "Róźnica: " << dodaj2(a , b) << endl;
-    cout << "Iloczyn: " << dodaj3(a, b) << endl;
-    cout << "Iloraz: " << dodaj4(a, b) << endl;
+    cout << "Suma: " << suma(a, b) << endl;
+    cout << "Róźnica: " << roznica(a , b) << endl;
+    cout << "Iloczyn: " << iloczyn(a, b) << endl;
+    cout << "Iloraz: " << iloraz(a, b) << endl;
 
 	return 0;
 }

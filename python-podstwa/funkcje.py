@@ -4,16 +4,16 @@
 #  szablon.py
 
 # zasięg zmiennych  może być lokalny lub globalny
-def dodaj(a, b):
+def suma(a, b):
     return a + b
     
-def dodaj2(a, b):
+def roznica(a, b):
     return a - b
     
-def dodaj3(a, b):
+def iloczyn(a, b):
     return a * b
     
-def dodaj4(a, b):
+def iloraz(a, b):
     return a / b
 
 def main(args):
@@ -25,10 +25,10 @@ def main(args):
     
     # dodaj(a, b) # lub mogę dac 5,6
     
-    print("Suma: ", dodaj(a, b))
-    print("Różnica: ", dodaj2(a, b))
-    print("Iloczyn: ", dodaj3(a, b))
-    print("Iloraz: ", dodaj4(a, b))
+    print("Suma: ", suma(a, b))
+    print("Różnica: ", roznica(a, b))
+    print("Iloczyn: ", iloczyn(a, b))
+    print("Iloraz: ", iloraz(a, b))
 
     return 0
 
