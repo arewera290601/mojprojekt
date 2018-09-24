@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-24T07:23:15+02:00
+
+====== sql jak stworzyć dobrą bazę danych ======
+Created poniedziałek 24 września 2018
+
+sqlpedia.pl/programowanie-i-normalizacja-baz-danych/
+
+
+1. dane nie mogą się powtarzać 
+2. nie może być wiele różnych informacji w jednej kolumnie (nie powinny zawierać kolekcji rółżnych wartości) 
+
+== Normalizacja to bezstratny proces organizowania danych w tabelach mający na celu zmniejszenie ilości danych składowych w bazie oraz wyeliminowanie potencjalnych anomalii.: ==
+1. pierwsza postać nomalna 1NF
+	 każde pole przechowuje jedną informację, dzieki czemu możemy dokonywać efektywnych zapytań
+	 wprowadza także pojęcie istnienie klucza głównego identyfikującego bezpośrednio każdy wiersz - uniklaność 
+2. duga postać normalna 2NF
+	każda tabela powinna przechowywać dane dotyczące tylko konkretnej klasy obiektów
+	 wszystkie atrybuty informacyjne(nie należące fo klucza ) wszystkie informacje ,muszą zawierać informacje o elementach tej konkretnej klasy
+3. trzecia postac normalna 3NF
+
