@@ -20,3 +20,4 @@ sqlpedia.pl/programowanie-i-normalizacja-baz-danych/
 	 wszystkie atrybuty informacyjne(nie należące fo klucza ) wszystkie informacje ,muszą zawierać informacje o elementach tej konkretnej klasy
 3. trzecia postac normalna 3NF
 
+

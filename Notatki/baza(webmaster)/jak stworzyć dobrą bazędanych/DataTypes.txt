@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-10-01T07:32:46+02:00
+
+====== DataTypes ======
+Created poniedziałek 01 października 2018
+
+https://edux.pjwstk.edu.pl/mat/118/lec/w3.html
+https://www.sqlite.org/datatype3.html
+
+MySQL=MawiaDB
+ORACLE-BASE
+
+* NULL. the value is a NULL value
+* INEGER the values is a signed ineger stored in n1, 2, 3, 4, 6, or 8 bytes depending on the magnitude od the value.
+* REAL. The value is a floating point value, stores as an 8-byte IEEE floating point number-- liczby zmiennoprzecinkowe
+* TEXT. the value is a text string, stored using the database encoding(UTF-8, UTF-16BE or UTF-16LE)
+* BLOB. the value is a blob of data stored exactly as it was input
+
+
+
+* CHAR(20)- jeżeli nie ma tyle znaków to wypełnia je spacjami
+* VARCHAR(20)- jeżeli nie ma ty;lu znaków nie zastępuje ich niczym (zuzywa mniej miejsca)
+* KODOWANIE= UTF-8
+* BOOLEAN(0- FALSE, 1- TRUE)
+
+===== DATE and TIME DataTypes =====
+
+* TEXT as ISO08601 (YYYY-MM-DD  HH:MM:SS.SSS)
+* REAL- kalendarz juliański (ILE dni UPŁYNEŁO OD 24.12 4714p.n.e.)
+* INTEGER- czas uniksowy- liczba sekund które upłyneł od po0czątku 1970 UTC. time()
