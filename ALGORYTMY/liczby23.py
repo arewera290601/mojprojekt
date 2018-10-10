@@ -28,16 +28,19 @@ def liczby3():
     Funkcja zwraca ich liczbę. 
     Wykluczone liczby: 111, 222, 333, 444, 555, 666, 777, 888, 999.
     """
-    
-    for i in range(1, 10, 10):
-        for j in range(0, 10, 10):
-            if i == j:
-                print("-", '', end= '')
-            else:
-                print("{}{} ".format(i, j), end= '')
+    ile = 0
+    for i in range(1, 10):
+        for j in range(0, 10):
+            for k in range(0, 10):
+                if i == j or i == k or j == k:
+                    print("-", '', end= '')
+                else:
+                    print("{}{}{} ".format(i, j, k), end= '')
+                    ile = ile +1
     print()
+    return ile
 def main(args):
-    print("Liczb 2-cyfrowych: ", liczby2())
+    print("Liczb 3-cyfrowych: ", liczby3())
     return 0
 
 if __name__ == '__main__':
