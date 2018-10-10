@@ -57,17 +57,26 @@ def choinka2(h, c):
         print()
     
     return 0
+    
+def trojkat(h, znak):
+    t = (h-1)*2
+    for i in range(h-1, -1, -1):
+        for j in range(t+1):
+            if j < i or j > t-i:
+                print(" ", end='')
+            else:
+                print(znak, end='')
+        print()
+
 
 
 def main(args):
-    a = int(input("Podaj długość podstawy trójkąta: "))
-    h = int(input("Podaj wysokość trojkąta: "))
-    c = str(input("Podaj znak z którego ma byc zbudowana trójkąt: "))
-    
-    for i in range(h):
-        for j in range(h + i):
-            print(c, end= '')
-        print()
+    h = int(input("Podaj wysokosc trójkąta: "))
+    z = input("Podaj znak: ")
+
+   
+
+    trojkat(h, z)
   
     
      
