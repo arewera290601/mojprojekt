@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-10-15T07:26:53+02:00
+
+====== KWERENDY- ZŁĄCZENIA ======
+Created poniedziałek 15 października 2018
+
+ SELECT * FROM newspaper LEFT JOIN online ON newspaper.id=online.id WHERE online.id IS NULL; 
+LEFT JOIN
+IS NULL/ IS NOT NULL
+ SELECT * FROM newspaper CROSS JOIN months;
+SELECT * FROM newspaper CROSS JOIN months
+   ...> WHERE start_month <= month AND end_month >= month;
+SELECT month, COUNT(*) FROM newspaper CROSS JOIN months
+   ...> WHERE start_month <= month AND end_month >= month
+   ...> GROUP BY month;
+1|2
+2|9
+3|13
+4|17
+5|27
+6|30
+7|20
+8|22
+9|21
+10|19
+11|15
+12|10
+
+UNION
+
+WITH zapytanie AS(SELECT customer_id, COUNT(subscription_id) AS 'subskrypcje' FROM orders GROUP BY customer_id) SELECT customers.name, zapytanie.subskrypcje FROM zapytanie JOIN customers ON zapytanie.customer_id=customers.id;
+
+
