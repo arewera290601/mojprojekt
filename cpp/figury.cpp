@@ -8,30 +8,41 @@
 
 using namespace std;
 
-int prostokat2(a, b, znak){
-        for (int i = 0; i < a; i++) {
-            for (int j = 0; j < b; j++) {
-                if (j == 0 && j == b - 1 && i == 0 && i == a - 1){
-                    }
-    
+void prostokat(int x, int y, char z) 
+{
+    for (int i = 0; i < x; i++){
+        for (int j = 0; j < y; j++)
+            if (j == 0 || j == y-1 || i == 0 || i == x-1)
+                cout << z;
+            else
+                cout << " ";
+        cout << endl;
+    }
 }
-
 
 int main(int argc, char **argv)
 {
-    int a, b; // deklaracja
-    a = b = 0; // inicjacja
-    //int a = 0; // definicja
-    cout << "Podaj bok 1: ";  
+	int a, b;  //deklaracja
+    a = b = 0;  //inicjacja
+    
+    cout << "Podaj długość boku a: ";
     cin >> a;
-    cout << "Podaj bok 2: ";
+        
+    cout << "Podaj długość boku b: ";
     cin >> b;
     
     char znak;
-    cout << "Podaj znak: ";
+    
+    cout << "Podaj znak, którym chcesz rysować: ";
     cin >> znak;
     
-    prostokąt2(a, b, znak);
+    prostokat(a, b, znak);
+    
+    /* 
+     * cout << "Podaj długości boków prostokąta: ";
+     * cin >> a >> b
+     */
+    
 	return 0;
 }
 
