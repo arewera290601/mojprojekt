@@ -43,6 +43,23 @@ void drukuj(int tab[], int rozmiar) {
     }
 }
 
+int min(int tab[], int rozmiar){
+    int min = tab[0];
+    for(int i=1; i < rozmiar; i++){
+        if (tab[i] < min)
+            min = tab[i];
+        }
+        return min;
+}
+
+int max(int tab[], int rozmiar){
+    int max = tab[0];
+    for(int i=1; i < rozmiar; i++){
+        if (tab[i] > max)
+            max = tab[i];
+        }
+        return max;
+}
 
 int main()
 {
@@ -50,6 +67,8 @@ int main()
     int tab[rozmiar];
     wypelnij_los(tab, rozmiar);
     drukuj(tab, rozmiar);
+    cout << "\n\nMin: " << min(tab, rozmiar) << endl;
+    cout << "\n\nMax: " << max(tab, rozmiar) << endl;
    // minmax();
     return 0;
 }
