@@ -9,6 +9,17 @@
 using namespace std;
 
 void licz_znaki(char tb[], int roz) {
+    for(int i = 0; i < roz; i++){
+        zamien małe litery na duze 
+        kod_ascii 'a' = 97
+        kod_ascii 'A' = 65
+        97-65 = 32
+        (char)(kod_ascii-32)
+        }
+  }
+
+
+void licz_znaki(char tb[], int roz) {
     //~for(int i=0; i < roz; i++) {
        //~cout << tb[i];
     //~}
