@@ -8,15 +8,21 @@
 
 using namespace std;
 
-void licz_znaki(char tb[], int roz) {
-    for(int i = 0; i < roz; i++){
-        zamien małe litery na duze 
-        kod_ascii 'a' = 97
-        kod_ascii 'A' = 65
-        97-65 = 32
-        (char)(kod_ascii-32)
-        }
-  }
+void zamiana_liter(char tab[])
+{   
+    int i = 0;
+    int kod = 0;
+    while(tab[i] != '\0') {
+        kod = (int)tab[i];
+        if (kod >= 65 && kod <= 90)
+            kod += 32;
+        else if (kod >= 97 && kod <= 122)
+            kod -= 32;
+        cout << (char)kod;  
+        i++;
+    }
+}
+
 
 
 void licz_znaki(char tb[], int roz) {
@@ -55,6 +61,7 @@ int main(int argc, char **argv)
 	char znaki[rozmiar];
     cin.getline(znaki, rozmiar);
     licz_znaki(znaki, cin.gcount());
+    zamiana_liter(znaki);
 	return 0;
 }
 
