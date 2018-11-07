@@ -16,10 +16,23 @@ void licz_znaki(char tb[], int roz) {
     int biale, inter, reszta;
     biale = inter = reszta = 0;
     while(tb[i] != '\0'){
-            if (tb[i] == ' ' || tb[i] == '\t') biale++;
-            else if (tb[i] == ',' || tb[i] == '.') inter++;
-            else reszta++;
-            i++;
+        //~if (tb[i] == ' ' || tb[i] == '\t') biale++;
+        //~else if (tb[i] == ',' || tb[i] == '.') inter++;
+        //~else reszta++;
+        //i++;
+        switch (tb[i]) {
+            case' ':
+            case'\t':
+                biale++;
+            break;
+            case',':
+            case'.':
+                inter++;
+            break;
+            default:
+                reszta++;
+    }
+    i++;  //inkrementcja 
    }
    cout << "Białych: " << biale << endl; 
    cout << "Inter: " << inter << endl; 
