@@ -65,7 +65,7 @@ int zlicz(char tb[]){
 
 void ascii(char tb[], int roz){
     for(int i = 0; i < roz; i++) {
-        kod = (int)tb[i];
+        //kod = (int)tb[i];
         cout << (int)tb[i] << " ";
     }
 }
@@ -89,8 +89,8 @@ int main(int argc, char **argv)
    // ilosc = zlicz(znaki);
     ilosc = strlen(znaki);
     //cout << ilosc;
-    ascii(znaki, ilosc);
-    odwroc(znaki);
+    //ascii(znaki, ilosc);
+    odwroc(znaki, ilosc);
 	return 0;
 }
 
