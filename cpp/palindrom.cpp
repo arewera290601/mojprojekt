@@ -15,9 +15,14 @@ bool palindrom(char w[], int r){
     int polowa = r / 2;
     for(int i = 0; i < polowa; i++)
     {
-     if (w[i] == w[r - 1 - i]) 
-        
+        if (w[i] == w[r - 1 - i]) 
+            ;
+        else {
+            pal = false;
+            break;
+            }
     }   
+    return pal;
 }
 
 int main(int argc, char **argv)
