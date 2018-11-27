@@ -1,0 +1,4 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+http://192.168.3.3:8000/html/python-pyqt-02.html#realizacja
