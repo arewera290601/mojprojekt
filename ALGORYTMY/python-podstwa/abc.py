@@ -33,7 +33,7 @@ def main(args):
    
    if b <= a >= c:
        print(a,"jest największe")
-   elif a <= a >=c: 
+   elif a <= b >=c: 
        print(b,"jest największe")
    else:  
        print(c,"jest największe")

@@ -6,7 +6,6 @@
  * 
  */
 
-
 #include <iostream>
 using namespace std;
 
@@ -14,9 +13,9 @@ void drukujw(int st, float tb[]){
     // 2x^3 + 3x^2 + 5x + 4 
     int i = 0;
     for(i = 0; i < st; i++) {
-        cout << tb[i] << "x^" << st - 1 << " + ";
+        cout << tb[i] << "x^" << st - i << " + ";
         }
-        
+    cout << tb[i];
     }
 
 
