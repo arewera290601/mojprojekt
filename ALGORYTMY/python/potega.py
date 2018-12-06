@@ -4,6 +4,11 @@
 #  potega.py
 #  Obliczanie potegi liczby naturalnej 
 
+def potega_re(a, n):
+    if n == 0:
+        return 1
+    returnpotega_re(a, n-1)*a
+
 def potega_it(a, n):
     wynik = 1
     for i in range(n):
