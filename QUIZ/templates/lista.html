@@ -12,7 +12,14 @@
 
 <body>
     <h1>Hey hay hello!!!!</h1>
-    <p>Zobacz pytania >>>>></p>
+ 
+    
+    {% for p in pytania %}
+        <li>
+            {{ p.pytanie }}
+        </li>
+    {% endfor %}
+    <p><a href="{{ url_for('') }}">Wróć do strony głównej >>>>></a></p>
 </body>
 
 </html>
