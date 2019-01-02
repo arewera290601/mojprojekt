@@ -47,8 +47,21 @@ void sort_bubble(int tab[], int n){
            }     
         }
     }
+    
+// PASCAl 1, :=
+// C++ 0, =
 
-sort_insert
+void sort_selection(int tab[], int n) {
+   int i, k, j;
+   for (i = 0; i < n - 1; i++){
+       k = i; // indeks najmniejszego elementu
+       for(j = k + 1; j < n; j++){
+            if (tab[j] < tab[k])
+                k = j;
+           }
+        zamien1(tab[i], tab[k]);
+       } 
+    }
 
 
 int main(int argc, char **argv)
@@ -58,7 +71,7 @@ int main(int argc, char **argv)
 	wypelnij(tab, roz);
     drukuj(tab, roz);
     cout << endl;
-    sort_bubble(tab, roz);
+    sort_selection(tab, roz);
     drukuj(tab, roz);
     //~tab[0] = 7;
     //~tab[1] = 5;
