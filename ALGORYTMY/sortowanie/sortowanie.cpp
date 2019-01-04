@@ -63,6 +63,17 @@ void sort_selection(int tab[], int n) {
        } 
     }
 
+void sort_insert(int tab[], int n) {
+   int i, k, j;
+   for (i = 1; i < n - 1; i++){
+       el = tab[i];
+       k = i-1; // indeks porównywanegoelementu z częsci posortowanego elementu
+       while (k >= 0 && tab[k]>el){
+           tab[]=tab[];
+           k--;
+           }
+        } 
+    }
 
 int main(int argc, char **argv)
 {
