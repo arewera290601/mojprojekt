@@ -1,9 +1,7 @@
-#!/usr/bin/env python
+##!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
 #  onp.py
-#  ONP- odwrotna notacja polska
-
 
 from stos_obj import Stos
 
@@ -29,9 +27,8 @@ def main(args):
            a = stos.pop()
            b = stos.pop()
            stos.push(eval(str(b) + el + str(a)))
-    
+
     print("Wynik: ", stos.pop())
-    
     return 0
 
 if __name__ == '__main__':

@@ -2,59 +2,77 @@
 # -*- coding: utf-8 -*-
 #
 #  reszta.py
-#
+#  
+
 
 def pobierzNominaly():
-    nominaly = set([500, 200, 100, 50, 20, 10, 5, 2, 1])
-    n = int(input('Podaj nominal lub 0 aby zakonczyć: '))
+    
+    nominaly = set([200, 100, 50, 20, 10, 5, 2, 1])
+    n = int(input('Podaj nominał lub 0 aby zakończyć: '))
     listaNm = []
+    
     while n > 0:
         if n in nominaly:
             listaNm.append(n)
         else:
             print('Błąd')
-        n = int(input('Podaj naminal lub 0 aby zakończyć: '))
-    listaNm.sort(reverse=True) #sortowanie malejące listy
+            
+        n = int(input('Podaj nominał lub 0 aby zakończyć: '))
+        
+    listaNm.sort(reverse = True)  # sortowanie malejące
+    
     return listaNm
 
-def wydajReszte1(r, l):
-    i = 0 # indeks nominału
+
+def wydajR1(r, l):
+    
+    i = 0  # indeks nominału
+    
     while r > 0:
         if r >= l[i]:
             ileNm = int(r / l[i])
             r -= ileNm * l[i]
             print("{} x {} zł".format(ileNm, l[i]))
         i += 1
-
-def wydajReszte2(reszta, listaNm):
+        
+        
+def wydajR2(reszta, listaNm):
     i = 0 # indeks nominału
-    liczbaNm = len(listaNm) #liczba nominał≥ów
+    liczbaNm = len(listaNm)  # liczba nominałów
+    
     while reszta > 0 and i < liczbaNm:
         while i < liczbaNm and reszta < listaNm[i]:
-            i += 1
+            i+= 1
         if i < liczbaNm and reszta >= listaNm[i]:
             nominal = listaNm[i]
             ileNm = int(reszta / nominal)
             if ileNm > listaNm.count(nominal):
                 ileNm = listaNm.count(nominal)
             reszta -= ileNm * nominal
+            
             for j in range(ileNm):
                 listaNm.remove(nominal)
                 liczbaNm -= 1
             i = 0
-            print("{} x {}".format(ileNm, nominal))
+            print("{} X {}".format(ileNm, nominal))
+            
     if reszta > 0:
-        print('brak nominałów do wydania {} zł'.format(reszta))
+        print("Brak nominałów do wydania {} zł".format(reszta))
 
 
 def main(args):
-    #listaNm = [500, 200, 100, 50, 20, 10, 5, 2, 1]
+    
+    #listaNm = [20, 10, 2, 1]
     listaNm = pobierzNominaly()
-    reszta= int(input('Podaj resztę: '))
-    #wydajReszte1(reszta, listaNm)
-    wydajReszte2(reszta, listaNm)
+    
+    reszta = int(input('Podaj resztę: '))
+    
+    #wydajR1(reszta, listaNm)
+    wydajR2(reszta, listaNm)
+    
     return 0
-
+    
+    
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))

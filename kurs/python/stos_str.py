@@ -19,10 +19,14 @@ def push(rozmiar, dane):
     else:
         print("Stack overflow!")
 
+
 def pop(rozmiar):
+    
     global stos, SP
-    SP -= 1 # dekrementacja
-    if SP >= -1:
+    
+    SP -= 1  # dekrementacja
+    
+    if SP >= 0:
         print(stos[SP])
         stos[SP] = None
     else:
@@ -41,12 +45,14 @@ def main(args):
     push(rozmiar, 3)
     pop(rozmiar)
     pop(rozmiar)
-    print(stos)
+    pop(rozmiar)
+ 
     print(SP)
+    print(stos)
         
     return 0
 
 
 if __name__ == '__main__':
     import sys
-sys.exit(main(sys.argv))
+    sys.exit(main(sys.argv))

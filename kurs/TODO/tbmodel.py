@@ -79,4 +79,3 @@ class TbModel(QAbstractTableModel):
 
 
 pola = ['Id', 'Zadanie', 'Dodano', 'Zrobione', 'Usuń']
-

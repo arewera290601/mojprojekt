@@ -1,11 +1,8 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-
 from models import *
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-
 
 # nazwa pliku bazy
 baza_nazwa = 'todo.db'
@@ -23,7 +20,7 @@ def ladujDane(sesja):
     """ Przygotowanie początkowych danych testowych """
     if sesja.query(Osoba).count() > 0:
         return
-    osoby = ('Adam', 'Ewa')
+    osoby = ('adam', 'ewa')
     zadania = ('Pierwsze zadanie', 'Drugie zadanie', 'Trzecie zadanie')
     for login in osoby:
         o = Osoba(login=login, haslo='123')
@@ -31,18 +28,18 @@ def ladujDane(sesja):
         for tresc in zadania:
             sesja.add(Zadanie(tresc=tresc, osoba=o))
     sesja.commit()
-    
-    
+
 def pobierzDane(sesja, osoba):
     zadania = []
     wpisy = sesja.query(Zadanie).filter(Zadanie.osoba == osoba)
     for z in wpisy:
         zadania.append([
-            z.id, 
-            z.tresc, 
+            z.id,
+            z.tresc,
             '{0:%Y-%m-%d %H:%M:%S}'.format(z.datad),
             z.wykonane,
-            False  ])
+            False
+        ])
     return zadania
     
 def dodajZadanie(sesja, osoba, tresc):
@@ -56,8 +53,7 @@ def dodajZadanie(sesja, osoba, tresc):
         '{0:%Y-%m-%d %H:%M:%S}'.format(zadanie.datad),
         zadanie.wykonane,
         False]
-
-
+        
 def zapiszDane(sesja, zadania):
     """ Zapisywanie zmian """
     for i, z in enumerate(zadania):
@@ -70,7 +66,6 @@ def zapiszDane(sesja, zadania):
             zadanie.tresc = z[1]
             zadanie.wykonane = z[3]
             sesja.commit()
-
 
 def loguj(sesja, login, haslo):
     osoba = sesja.query(Osoba).filter(Osoba.login == login,
@@ -89,16 +84,16 @@ def loguj(sesja, login, haslo):
 
 def main(args):
     ladujDane(sesja)
-    osoba = loguj(sesja, 'Ewa', '123')
+    osoba = loguj(sesja, 'ewa', '123')
     if osoba:
         print(osoba.login, osoba.id)
     else:
         print("Błędne hasło!")
-    # ~osoba = loguj(sesja, 'Ola', '12')
-    # ~if osoba:
-        # ~print(osoba.login, osoba.id)
-    # ~else:
-        # ~print("Błędne hasło!")
+    #osoba = loguj(sesja, 'ola', '12')
+    #if osoba:
+    #    print(osoba.login, osoba.id)
+    #else:
+    #    print("Błędne hasło!")
     return 0
 
 
