@@ -19,17 +19,19 @@ PAL_SZER, PAL_WYS, MAKS_V = 100, 20, 10
 # utworzenie powierzchni paletki, wypełnienie jej kolorem,
 pal1 = pygame.Surface([PAL_SZER, PAL_WYS])
 pal1.fill((0, 0, 255))
-
-
-
 # ustawienie prostokąta zawierającego paletkę w początkowej pozycji
 pal1_prost = pal1.get_rect()
 pal1_prost.x = 350
 pal1_prost.y = 360
-pal1_prost = pal1.get_rect()
-pal1_prost.x = 350
-pal1_prost.y = 360
 
+# paletka gracza 2
+# utworzenie powierzchni paletki, wypełnienie jej kolorem,
+pal2 = pygame.Surface([PAL_SZER, PAL_WYS])
+pal2.fill((255, 0, 0))
+# ustawienie prostokąta zawierającego paletkę w początkowej pozycji
+pal2_prost = pal1.get_rect()
+pal2_prost.x = 350
+pal2_prost.y = 20
 # pętla główna programu
 while True:
     # obsługa zdarzeń
@@ -38,7 +40,7 @@ while True:
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
-
+    
     # kolor okna gry, składowe RGB podane w tupli
     plansza.fill((200, 255, 255))
     plansza.blit(pal1, pal1_prost)
