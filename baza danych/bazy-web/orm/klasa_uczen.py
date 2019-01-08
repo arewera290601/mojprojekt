@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 #  klasa_uczen.py
+
 import os
 from peewee import *
 

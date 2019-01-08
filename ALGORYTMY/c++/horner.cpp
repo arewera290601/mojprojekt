@@ -18,6 +18,21 @@ void drukujw(int st, float tb[]) {
         
     }
 
+//~horner_re(2, 3, tbwsp)
+//~horner_re(2, 2, tbwsp) * 2 + 4
+//~horner_re(2, 1, tbwsp) * 2 + 5
+//~horner_re(2, 0, tbwsp) * 2 + 3
+//~ 2 * 2 + 3 = 7
+//~ 7 * 2 + 5 = 19
+//~ 19 * 2 + 3 = 42
+//~ 42
+
+float horner_re(float x, int stopien, float tbwsp[]){
+    if (stopien == 0) return tbwsp[0];
+    return x * horner_re(x, stopien - 1, tbwsp) + tbwsp[stopien];
+
+}
+
 float horner_it(float x, int stopien, float tbwsp[]){
     // x(x(2x+ 3) + 5) + 4
     float wynik;
@@ -53,7 +68,8 @@ int main(int argc, char **argv)
     
     cout << "Wartość wielomianu o postaci: ";
     drukujw(stopien, tbwsp);
-    cout << "wynosi: " << horner_it(x, stopien, tbwsp);
+    cout << "Wynosi: " << horner_it(x, stopien, tbwsp) << endl;
+    cout << "Wynosi: " << horner_re(x, stopien, tbwsp) << endl;
     
 	return 0;
 }
