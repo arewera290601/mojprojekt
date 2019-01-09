@@ -67,7 +67,6 @@ class PongGra(object):
             )
             self.fpsClock.tick(100)
 
-<<<<<<< HEAD
 class ObiektGraf():
     
     def __init__(self, szer, wys, x, y, kolor=(0, 255, 0)):
@@ -144,20 +143,3 @@ class Gracz2():
 if __name__ == "__main__":
     gra = PongGra(800, 400)
     gra.uruchom()
-=======
-            self.plansza.rysuj()
-            
-class ObiektGraf():
-    """ Klasa bazowa dla rysowania obiektów """
-    
-    def __init__(self, szer, wys, x, y, kolor=(0, 255, 0)):
-        self. szer = szer
-        self.wys = wys
-        self.pow = pygame.Surface([wys, szer], pygame.SRCAPLHA).convert_alpha()
-        self.prost = self.pow.get_rect(x=x, y=y)
-
-if __name__ == "__main__":
-    gra = PongGra(800, 400)
-    gra.uruchom()
-
->>>>>>> 1cdcce8b5427a31194b9027ce484439ca8b28bef

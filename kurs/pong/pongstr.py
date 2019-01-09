@@ -43,8 +43,7 @@ while True:
     
     # kolor okna gry, składowe RGB podane w tupli
     plansza.fill((200, 255, 255))
-    # umieść na planszy paletki graczy
     plansza.blit(pal1, pal1_prost)
-
+    plansza.blit(pal2, pal2_prost)
     # rysowanie okna
     pygame.display.update()
