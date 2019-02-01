@@ -7,7 +7,7 @@ from turtle import *
 color('pink', 'black')
 begin_fill() # zacznij wypełniać
 for i in range(4):
-    forward(200)
-    right(90)
+    forward(1500)
+    right(900)
 done()
 
