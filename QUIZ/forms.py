@@ -19,6 +19,6 @@ class OdpForm(FlaskForm):
     
 class DodajForm(FlaskForm):
     pytanie = StringField('Treść pytania:', validators=[Required(message=blad1)])
-    kategorie = SelectField('Kategoria', coerce= int)
+    kategoria = SelectField('Kategoria', coerce= int)
     odpowiedzi = FieldList(FormField(OdpForm), min_entries=3)
     id = HiddenField()
