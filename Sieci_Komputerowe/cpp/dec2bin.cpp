@@ -1,13 +1,13 @@
 /*
  * dec2bin.cpp
  * 
-
  */
 
 #include <iostream>
 #include <cmath>
 using namespace std;
 
+int cyfry[16] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 65, 66, 67, 68, 69, 70};
 
 
 int dec2any(int liczba, int podstawa, int tab[]) {
@@ -23,7 +23,7 @@ int dec2any(int liczba, int podstawa, int tab[]) {
 //~n = 3
 //~711(n) = 7*(n-1)^2+1*(n-2)^1+1*(n-3)^0
 
-int any2dec(int tab[]) {
+void any2dec(int tab[]) {
     int podstawa = 0;
     do {
         cout << "Podstawa <2;9>: ";
@@ -41,9 +41,10 @@ int any2dec(int tab[]) {
     int wynik = 0;
     for (int i = 0; i < ile; i++) {
     // kolejna liczba z tabeli mnożona przez odpowiednią potęgę podstawy
-        wynik += pow(tab[i], ile-1-i)
+        wynik += tab[i] * pow(podstawa, ile-1-i);
         
         }
+        cout << "Wynik: " << wynik; 
     }
 
 int main(int argc, char **argv)
@@ -55,9 +56,14 @@ int main(int argc, char **argv)
     int i = dec2any(liczba, podstawa, tab);
     cout << "Wynik: ";
     while (i >= 0) {
-        cout << tab[i];
+        if (podstawa > 9)
+            cout << cyfry[tab[i]];
+        else
+            cout << tab[i];
         i--;
     }
+    cout << endl;
+    any2dec(tab);
     
     
 	return 0;
