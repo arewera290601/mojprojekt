@@ -10,41 +10,37 @@ using namespace std;
 
 #define MAKS 100
 
-void szyfruj(char tekst, int klucz){
-    int ilosc = 0;
-    ilosc = strlen(tekst);
-    
-    int i = 0;
-    int cyfry, literyD, literyM, reszta;
-    cyfry = literyD = literyM = reszta = 0;
-    int znak_kod = 0; //kod ASCII badanego znaku
-    
-    
-    while(tb[i] != '\0'){
-        znak_kod = (int)tb[i];
-        if (znak_kod > 64 && znak_kod < 91) // to sprawia że sa duże litery
-            literyD++;
-        else if (znak_kod > 96 && znak_kod < 123)
-            literyM++;
-        else if (znak_kod > 47 && znak_kod < 58)
-            cyfry++;
-        else 
-            reszta++;
-        
-    i++;  //inkrementcja indeksu
-   }
-
-    }
+void szyfruj(int klucz, char tab[])
+{
+	int dl = strlen(tab); //określenie ilości znaków wyrazu
+	
+	//sprawdzenie, czy klucz miesci sie w zakresie
+	if(!(klucz >= -26 && klucz <= 26)) return;
+	
+	if(klucz >= 0)
+		for(int i=0;i<dl;i++)
+		if(tab[i] + klucz <= 'z')
+			tab[i] += klucz;
+		else
+			tab[i] = tab[i] + klucz - 26; 
+	else
+		for(int i=0;i<dl;i++)
+		if(tab[i] + klucz >= 'a')
+			tab[i] += klucz;
+		else
+			tab[i] = tab[i] + klucz + 26;
+}
 
 int main(int argc, char **argv)
 {
+    
     int klucz = 0;
-    char tekst[MAKS];
+    char tab[MAKS];
     cout << "Podaj tekst:\n";
-    cin.getline(tekst, MAKS);
+    cin.getline(tab, MAKS);
 	cout << "Podaj klucz: ";
     cin >> klucz;
-     //~szyfruj(tekst, klucz);
+    szyfruj(klucz, tab);
   
 	return 0;
 }
