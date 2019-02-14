@@ -64,10 +64,19 @@ int zlicz(char tb[]){
 
 
 void ascii(char tb[], int roz){
-    for(int i = 0; i < roz; i++) {
-        //kod = (int)tb[i];
-        cout << (int)tb[i] << " ";
+    void ascii(char tb[], int roz){
+    int kod = 0;
+    for (int i = 0; i < roz; i++){
+        kod = (int)tb[i];
+        if (kod > 96 && kod < 123)
+            cout << (char)(kod-32) << " ";
+        else if (kod > 64 && kod < 91)
+            //~cout << (char)(kod+32) << " ";
+        //~else
+            //~cout << tb[i] << " ";
+    cout << (char)kod << " ";
     }
+}
 }
 
 
