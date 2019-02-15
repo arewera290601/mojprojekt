@@ -1,47 +1,40 @@
-/* 
- * szyfr_Cezara.cpp
- * 
- * 
+/*
+ * szyfr_cezara.cpp 
  */
 
-#include <string.h>
-#include <iostream>
 using namespace std;
 
+#include <iostream>
+#include <string.h>
 #define MAKS 100
 
-void szyfruj(int klucz, char tab[])
-{
-	int dl = strlen(tab); //określenie ilości znaków wyrazu
-	
-	//sprawdzenie, czy klucz miesci sie w zakresie
-	if(!(klucz >= -26 && klucz <= 26)) return;
-	
-	if(klucz >= 0)
-		for(int i=0;i<dl;i++)
-		if(tab[i] + klucz <= 'z')
-			tab[i] += klucz;
-		else
-			tab[i] = tab[i] + klucz - 26; 
-	else
-		for(int i=0;i<dl;i++)
-		if(tab[i] + klucz >= 'a')
-			tab[i] += klucz;
-		else
-			tab[i] = tab[i] + klucz + 26;
+void szyfruj(char tb[], int klucz){
+    klucz = klucz % 26;
+    int kod = 0;
+    int i = 0;
+    while (tb[i] != '\0'){
+        kod = (int)tb[i] + klucz;
+        if (tb[i] == ' '){
+            kod -= klucz;
+        } else if (kod > 122){
+            kod -= 26;
+        }
+        cout << (char)kod;
+        tb[i]= (char)kod;
+        i++;
+    }
+    cout << endl;
 }
 
 int main(int argc, char **argv)
 {
-    
+	char tekst[MAKS];
     int klucz = 0;
-    char tab[MAKS];
-    cout << "Podaj tekst:\n";
-    cin.getline(tab, MAKS);
-	cout << "Podaj klucz: ";
+    
+    cout << "Podaj tekst w małych literach: " << endl;
+    cin.getline(tekst, MAKS);
+    cout << "Podaj klucz: ";
     cin >> klucz;
-    szyfruj(klucz, tab);
-  
+    szyfruj(tekst, klucz);
 	return 0;
 }
-
