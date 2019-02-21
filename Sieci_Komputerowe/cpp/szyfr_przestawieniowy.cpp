@@ -1,5 +1,5 @@
 /*
- * szyfr_cezara.cpp 
+ * szyfr_przestawieniowy.cpp 
  */
 
 using namespace std;
