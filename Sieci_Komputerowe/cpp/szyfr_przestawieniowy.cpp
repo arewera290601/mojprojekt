@@ -2,40 +2,35 @@
  * szyfr_przestawieniowy.cpp 
  */
 
-#include <iostream>
-#include <stdio.h>
-#include <string.h>
-
+#include<iostream>
+#include<cstring>
 using namespace std;
 
-#define MAKS 100
-
-void szyfruj(char tekst[], int klucz){
-    int ilosc = strlen(tekst);
-    cout << ilosc << endl;
-    int reszta = ilosc % klucz;
-    
-    if (reszta > 0) {
-        for(int i = ilosc; i < ilosc + klucz - reszta; i++)
-        tekst[i]= '.';
-    }
-    
-    
-
+void kodowanie(char *napis)
+{
+	int dl = strlen(napis); //wyznaczenie liczby znaków
+	
+	for(int i=0; i<dl-1; i+=2) //przesuwamy się o dwa znaki
+	//zamiana sąsiadujących znaków
+	{
+		char pom = napis[i];
+		napis[i] = napis[i+1]; //dlatego w pętli i<dl-1
+		napis[i+1] = pom;	
+	}
 }
 
-int main(int argc, char **argv)
+int main()
 {
-	char tekst[MAKS];
-	int klucz = 0;
-    
-    cout << "Podaj tekst: " << endl;
-    cin.getline(tekst, MAKS);
-    //cout << cin.gcount()<< endl;
-    //cout << strlen(tekst) << endl;
-    cout << "Podaj klucz: " << endl;
-    cin >> klucz;
-    
-    szyfruj(tekst, klucz);
+	char napis[100];
+	
+	cout<<"Podaj napis do zaszyfrowania: ";
+	cin.getline(napis, 100);
+	//szyfrujemy
+	kodowanie(napis);
+	cout<<"Szyfrogram: ";
+	cout<<napis<<endl;
+	
+	
+	cin.get();
 	return 0;
 }
