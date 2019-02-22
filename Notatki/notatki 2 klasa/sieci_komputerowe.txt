@@ -55,3 +55,15 @@ dec2bin 129(10) -> 10000001(2) = 128 + 1
 8, 4, 2, 1
 1001 0011(2) = (16) = 9 3(16) 
 A1(16) = 1010 0001 = 128+32+1 = 161
+
+
+
+
+====== Kryptografia ======
+
+klucza publicznego nazywana także kryptografia asymentryczną to rodzaj kryptografii w którym używa się zestawów dwu lub wicej powiązanych ze soba kluczy umozliwiaja wejdz na wipedie i sobie doczytaj resztę 
+
+
+
+===== funkcja skrótu =====
+funkcja prezyporzadkowuje dowolne na wikipedii`
