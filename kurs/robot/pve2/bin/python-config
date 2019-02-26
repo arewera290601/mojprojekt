@@ -1,4 +1,4 @@
-#!/home/kurs6/mojprojekt/kurs/robot/pve2/bin/python
+#!/home/lo1sand/robot/pve2/bin/python
 
 import sys
 import getopt
