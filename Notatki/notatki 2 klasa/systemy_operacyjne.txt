@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-02-28T07:20:40+01:00
+
+====== systemy operacyjne ======
+Created czwartek 28 lutego 2019
+
+architektura von Neumanna
+RAM- pamięć o swobodnym dostępie pamięć sekwencyjna
+ROM pamięć tylkio do odczytu  po wyłączeniu kompa pamięć się nie usuwa zawiera się w nim m.in.:
+	BIOS- podstawowy system wyjścia-wejścia
+	UEFI- interfejs pomiędzy systemem operacyjnym a firmware opracowany jako podstawa BIOSU
+Pamięć podreczna na prosesorze - pamięc cache
+
+Pmięć masowa- pamięc trwała która umozliwia przechowywanie dużej ilości danych przez długoi czas
+	SSD to nie jeste dysk mechaniczny 
+	HDD 
+	
+	
+szyna danych - część magistrali komuikacyjnej odpowiedzialna za transmisję właściwych danych
+	szyna adresowa
+	szyna sterująca
+	
+magistrala równoległa i szeregowa
+
+Najważniejsza rzecz w prosesorze to zespół rejestrów który słóży do przechowywania tymczasowych wyników obliczeń
+	
+	
