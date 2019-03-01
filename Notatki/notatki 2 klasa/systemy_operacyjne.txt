@@ -26,3 +26,7 @@ magistrala równoległa i szeregowa
 Najważniejsza rzecz w prosesorze to zespół rejestrów który słóży do przechowywania tymczasowych wyników obliczeń
 	
 	
+INPUT: mysz klawiatura dysk hdd, ssd flash CD/DVD skaner tablet+pióro
+OUTPUT: dysk hdd, ssd flash CD/DVD drukarka ekran
+
+Jądro sysemtu operacyjnego pośrednicz między prosesor pamięć urządzenia a aplikacją
