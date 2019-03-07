@@ -64,7 +64,7 @@ int main(int argc, char **argv)
     cin.getline(tekst, MAKS);
     cout << "Podaj klucz: ";
     cin >> klucz;
-    //szyfruj(tekst, klucz);
-    deszyfruj(tekst, klucz);
+    szyfruj(tekst, klucz);
+    //deszyfruj(tekst, klucz);
 	return 0;
 }

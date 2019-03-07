@@ -30,3 +30,22 @@ INPUT: mysz klawiatura dysk hdd, ssd flash CD/DVD skaner tablet+pióro
 OUTPUT: dysk hdd, ssd flash CD/DVD drukarka ekran
 
 Jądro sysemtu operacyjnego pośrednicz między prosesor pamięć urządzenia a aplikacją
+
+
+
+====== LINUX ======
+jako jądro systemu operacyjnego i linux jako system operacyjny
+idea tzn. open source ideologia linuxa - otwarty i wolny
+jądro systemy pisane językiem C lub C++
+XORG
+WAYLAND
+środowisko pulpitu: GNOME, KDE, XFCE
+
+tablica partycji- forma przechowywania 
+partycja fat - jest ograniczona więc w zamian musimy utworzyć
+partycja GPT
+MBR- część sektorów na dysku twardym w którym zapisana jest ionformacja z której partycji należy uruchamiać komputer, czyli która jest aktywana (rozruchowa)
+partycja ROOT- symbolizuje go [[/devisda1]]
+formatowanie- 
+montowanie- polega na dołaczeniu zasobu dyskowego do struktury pliku
+
