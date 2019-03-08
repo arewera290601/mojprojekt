@@ -49,3 +49,25 @@ partycja ROOT- symbolizuje go [[/devisda1]]
 formatowanie- 
 montowanie- polega na dołaczeniu zasobu dyskowego do struktury pliku
 
+bootloader odpowiada za rozruch systemu
+
+UTC w stosunku do localtime 
+linux domyślnie z UTC a windows z localtime 
+konto ROOt on może wszystkooo !!!!!!!!!!!!!!!!!!
+powłoka: w linuxie bash zsh rsh ksh csh
+ w windows nazywa kommand lub powershall uruchamiana jest cmd
+
+grupy systemowe pozwalają użytkownikowi pewne uprawnienia
+Toolchain jest to zestaw podstawowego oprogramowanie do tworzenia oprogramowania
+
+linuc+ toolchain + user software (oprogramowanie użytkownika)
+najstarsza dystrybucja to 1) slackware 
+	2) Debian => Ubuntu => Linux Mint, gałąź stabilna + gałąź rozwojowa
+		stabilna gałąź Debian stable a Ubuntu LTS
+	3) Arch -> dystrybucja ciągła
+	4) serwery WWW,bazodanowe: na serwerach Debian, RedHat, Slackware
+	5) IOT
+
+
+
+
