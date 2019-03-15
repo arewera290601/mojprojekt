@@ -70,4 +70,15 @@ najstarsza dystrybucja to 1) slackware
 
 
 
+====== WINDOWS ======
+przy 10 przeszli na usługę która cały czas jest aktualizowana
+
+dos nie ma konta użytkownika można mieć tylko jedną włączoną aplikację
+
+
+
+Podstawowym zadaniem syste,mu operacyjnego jest: zarządza pamięcią, przydziela czas procesora (procesory są wielozadaniowe) Kernel mode drivers- tryp jądra sysemowego
+
+
+
 

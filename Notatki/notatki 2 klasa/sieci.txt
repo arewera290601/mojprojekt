@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-03-15T13:49:46+01:00
+
+====== sieci ======
+Created piątek 15 marca 2019
+
+komputery są połaczone w sieci za pomoca ethernetu
+
+skrętka jest to kabel który składa się przeważnie z 8 kabelków które są skręcone żeby nie dochodziło do zakłóceń  jeden jest pusty a drugi pelny
+kabel sieciowy LAN RJ45
+przepustowość 100 Mb/s jest wartością stałą
+prędkość nie jest wartościa stałą  jest zmienna 
+adres IPv4- jest to numer który identyfikuje komouter np. 182.168.x.x lub 10.x.x.x lub 172.16.x.x 
+LAN- sieś lokalna local area network może być w tym komputerwe wszystkich postaciach (deskop, laptop(eth, wifi), 
+																				to juz inna kategoria xd: smartfony, drukarki) 
+swith- dzięki temu można przekazywanie z jednego kopa do drugiego sygnałów (przełącznik)
+swith -interfejsy wewnętrzne za pomocą tego nie jesteśmy w stanie połączyć sie z internetem 
+ROUTER (SWITH + ROUTER)- interfejs wewnętrzny + interfejs zewnętrzny (DSL, WAN) on łączy sieci na podstawie adresu IP, routing (trsaowanie)- to wyznaczanie trasy do rutera w publicznym ip
+ 1 LAN w sieci publicznej może zawierać do 254 komputerów lub czasem więcej
+
