@@ -19,3 +19,15 @@ swith -interfejsy wewnętrzne za pomocą tego nie jesteśmy w stanie połączyć
 ROUTER (SWITH + ROUTER)- interfejs wewnętrzny + interfejs zewnętrzny (DSL, WAN) on łączy sieci na podstawie adresu IP, routing (trsaowanie)- to wyznaczanie trasy do rutera w publicznym ip
  1 LAN w sieci publicznej może zawierać do 254 komputerów lub czasem więcej
 
+
+MOdel TCP/IP  https://pl.wikipedia.org/wiki/Model_TCP/IP
+Model OIS https://pl.wikipedia.org/wiki/Model_OSI
+protokół sieciowy - zesatw zasad opisujący jak się komunikować znany protokół 
+HTTP odpowiada on za usługę www podstawowe metody to pot i get  80/tcp
+HTTPS https://pl.wikipedia.org/wiki/HTTPS 442/tcp
+
+serwerów http może na jednym,  adresie ip działać wiele odróżnia się ja za pomocą portów wartości ich to 1- 1024
+
+FTP-DATA 20/tcp
+FTP 21/tcp
+ftp ma wersje bezpieczną SFTP  SSH + FTP =SFTP
