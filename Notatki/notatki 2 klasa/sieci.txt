@@ -31,3 +31,18 @@ serwerów http może na jednym,  adresie ip działać wiele odróżnia się ja z
 FTP-DATA 20/tcp
 FTP 21/tcp
 ftp ma wersje bezpieczną SFTP  SSH + FTP =SFTP
+
+warstwa transportowa:
+protokół Tcp jest protokołem 
+	połączeniowym np. HTTP, POP3, IMAP, SMTP, FTP
+	stanowy
+	on segnetuje dane 
+
+protokół UDP jest bezpołączeniowy nie interesuje go czy dane zostały gdzieś tam odesłane odebrane i wg, wykorzystywane przez streaming AV, Skype, Hangout
+w grach sieciowych wykorzystany jest protokół UDP , ten protokoł jest także bezstanowy
+
+warstwa internetowa:
+IPv4 -64 bity
+IPv6- 128 bitów
+
+NAT- dzięki temu IP prywaten jest zamieniane na IP publiczne i dopiero wtedy łączy się z serwerem są tego dwa rodzaje SNAT(najczęściej stosowany typ) i DNAT
