@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Szablon Bootstrapa</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Font Awesome, zob. How to Use: https://fontawesome.bootstrapcheatsheets.com -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+
+  <!-- twoje style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- brak java scriptu -->
+  <noscript>
+    Do pełnej funkcjonalności strony potrzebujesz włączonej obsługi skryptów.
+    Tu znajdziesz <a href="https://www.enable-javascript.com/pl/" target="_blank">
+    instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.
+  </noscript>
+
+  <!-- nieaktualna przeglądarka, zob. dostosowanie: https://browser-update.org/customize.html -->
+  <script>
+    var $buoop = {notify:{e:-6,f:-4,o:-4,s:-2,c:-4},insecure:true,api:5};
+    function $buo_f(){
+      var e = document.createElement("script");
+      e.src = "http://browser-update.org/update.min.js";
+      document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+  </script>
+
+<!-- Nawigacja -->
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ecg.vot.pl</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Poczytaj</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="materiały.html">Materiały</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="narzędzia.html">Narzędzia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="linux.html">Linux</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="archiwum.html">Archiwum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="linki.html">Linki</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead" style="background-image: url('img/tło.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>eCG</h1>
+            <span class="subheading">Czego dowiesz się sam, tego się nauczysz!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Treść główna -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">
+              <h2 class="post-title">
+              <a href=https://linuxmint-installation-guide.readthedocs.io/en/latest/>Instalacja i konfiguracja Linux Minta – przewodnik (en)</a>
+              </h2>
+            <p class="post-meta">2017.12.12
+              </p>
+          </div>
+          <hr>
+          <div class="post-preview">
+              <h2 class="post-title">
+                <a href="https://www.dobreprogramy.pl/Jak-zmniejszyc-partycjesystemowa-Windows-i-zrobic-miejsce-na-Linuksa,News,79753.html">
+                  Jak zmniejszyć partycję systemową Windows i zrobić miejsce na Linuksa?</a>
+              </h2>
+            <p class="post-meta">
+            2017.11.18</p>
+          </div>
+          <hr>
+          <div class="post-preview">
+              <h2 class="post-title">
+              <a href="https://www.dobreprogramy.pl/wielkipiec/Telemetria-w-Windows-10-dwa-lata-pozniej-czy-wiemy-cos-nowego,84259.html">Telemetria w Windows</a>
+              </h2>
+            <p class="post-meta">
+              2017.11.18
+            </p>
+          </div>
+          <hr>
+          <div class="post-preview">
+              <h2 class="post-title">
+              Profesjonalny edytor kodu
+              </h2>
+              <h3 class="post-subtitle">
+                Sublime Text 3 to profesjonalny edytor kodu, który za pomocą wtyczek można przekształcić
+               w bardzo sprawne narzędzie programowania w wielu językach, np. w Pythonie, C++, HTML czy JS. Zobacz:<u><a href="https://python101.readthedocs.io/pl/latest/env/ide.html#sublime-text-3">
+                 instalacja i konfiguracja ST3 »»»</a></u>
+              </h3>
+            <p class="post-meta">
+            2017.02.17</p>
+          </div>
+          <hr>
+          <hr>
+          <div class="post-preview">
+              <h2 class="post-title">
+                Porteus 3.2.2
+              </h2>
+              <h3 class="post-subtitle">
+              Porteus – 64-bitowy mobilny system operacyjny typu live, przeznaczony do instalacji na kluczach USB, oparty na najstarszej dystrybucji
+              Linuxa Slackware, został zaktualizowany. Przygotowaliśmy opis najnowszej wersji i specjalny zestaw pakietów przekształcający Porteusa
+               w pełnoprawne środowisko deweloperskie Pythona, C++, HTML/CSS.<u><a href="https://linetc.readthedocs.io/pl/latest/porteus/index.html"> Więcej »»»</a></u>
+              </h3>
+            <p class="post-meta">
+            2017.01.10</p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+  <!-- Stopka strony: copyrights, dodatkowe linki itp. -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; ecg 2018</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery library -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
