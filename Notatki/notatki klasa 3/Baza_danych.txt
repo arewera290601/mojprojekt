@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-17T07:21:51+02:00
+
+====== Baza danych ======
+Created wtorek 17 września 2019
+
+===== anomalie baz danych: =====
+
+== -redundancja ==
+
+== -anomalia modyfikacji ==
+jeżeli dane w bazie powatarzaja się i trzbeba ja zmienic to trzeba ja zmienic w wielu miejscach zmieniona i w tym momencie tracimy cos takiego co sie nazywa spónością danych
+
+== -anomalia usuwania- ==
+zwiazana z prób a przechowywania w koljumnie albo w polu przechowywania informacji dane ma cechowość atomowość czyli kazde informacjie w osobnej kolumnie wierszu
+
+== -anomalia dodawania ==
+
+===== normalizacja baz danych: =====
+
+== -atomowośc informacji - w jednej kolumnie przechowujemy jedną daną ==
+-podział danych na tabele
+
+==== Arkusz kalkulacyjny przydatne informacje ====
+kazda dana w osobnej kolumie (gdyby byly oddzielone spacją- dane/tekst jako kolumny) 
+
+=== Funkcje tekstowe w arkuszu ===
+DŁ. - długość tekstu 
+FRAGMENT.TEKSTU- zwraca fragment danego tekstu
+LEWY Zwraca początkowe znaki w ciągu tekstowym.
+
+=== Filtry ===
+Dane/więcej filtrów/filtr standardowy- opcja- bez duplikatów
+sortuj dane/sortuj
+
+
+====== Skróty ======
+
+CTRL+SHIFT+strzałka w dół -zaznaczenie serii danych w kolumnie
+F4- Przełączanie danych cos tam coś tam
+ctrl+shift+v - wklejanie specjalne
