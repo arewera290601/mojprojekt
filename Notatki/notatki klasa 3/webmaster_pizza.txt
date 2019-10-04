@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-10-03T12:57:51+02:00
+
+====== webmaster pizza ======
+Created czwartek 03 października 2019
+
+ python manage.py check sprawd<zanie błędów
+python manage.py makemigrations pizza po kazdej zmianie w modelu
+ python manage.py sqlmigrate pizza (0001, 0002, 0003.....)
+python manage. py migrate
+python migrate.py dbshell
+python migrate.py shell 
