@@ -16,5 +16,9 @@ public:
     Osoba();
     Osoba(string, string, int, string);
     void dane();
+    bool ustawImie(string);
+    bool ustawNazwisko(string);
+    bool ustawWiek(int);
+    bool ustawPlec(string);
 };
 #endif

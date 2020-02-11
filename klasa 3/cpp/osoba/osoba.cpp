@@ -19,3 +19,34 @@ void Osoba::dane() {
         cout << plec << ")" << endl;
 }
 
+bool Osoba::ustawImie(string i) {
+        if (i.size() > 1) {
+                imie = i;
+                return true;
+        }
+        return false;
+}
+
+bool Osoba::ustawNazwisko(string n) {
+        if (n.size() > 1) {
+                nazwisko = n;
+                return true;
+        }
+        return false;
+}
+
+bool Osoba::ustawWiek(int w) {
+        if (w > 0) {
+                wiek = w;
+                return true;
+        }
+        return false;
+}
+
+bool Osoba::ustawPlec(string p) {
+        if (p.size() > 0) {
+                plec = p;
+                return true;
+        }
+        return false;
+}
