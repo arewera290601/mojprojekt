@@ -6,8 +6,8 @@
 #include <cstdlib>
 #include "osoba.h"
 
-using namespace std;
 
+using namespace std;
 int main(int argc, char **argv)
 {
         bool sukces = false;
