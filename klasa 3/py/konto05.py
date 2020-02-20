@@ -4,7 +4,7 @@
 #  konto02.py
 #  
 
-class Konto():
+class KontoBasic():
     def __init__(self, ile=0, dane={}):
         self.bilans = ile
         self.osoba = dane
@@ -16,34 +16,41 @@ class Konto():
     def wyplata(self, ile):
         self.bilans -= int(ile)
         return self.bilans
+        
+    def getDane(self, k):
+        return self.osoba[k]
     
-konta = [utworzKonto('Ala'), utworzKonto('Bela')]
+    def drukujBilans(self):
+        print(self.bilans)
+        
+k1 = KontoBasic(100, {'imie': 'Adam', 'nazwisko': 'Słodowy'})
+k2 = KontoBasic(2000, {'imie': 'Izabela', 'nazwisko': 'Kowalsky'})
 
+k1.wplata(100)
+k2.wplata(3000)
+k1.wyplata(200)
+k2.wyplata(400)
+print(k2.getDane('imie')) 
+k2.drukujBilans()
+
+
+class KontoPremium(KontoBasic):
+    def __init__(self, ile, dane={}, debet=0):
+        KontoBasic.__init__(self, ile, dane) #wywołanie konstruktora rodzica
+        self.debet = debet
     
-while True:
-    if not kto:
-        kto=input('Imię: ').strip().lower()
-        klient = None
-        for o in konta:
-            if o['kto'] == kto:
-                klient = o
-        if not klient:
-            print('Nie ma konta!')
-            kto = None
-            continue
-    print('+ - wpłata')
-    print('- - wypłata')
-    print('0 - koniec')
-    op = input('Działanie: ').strip()
-    if op == '+':
-        klient = wplata(klient)
+    def wyplata(self, ile):
+        if self.bilans - ile < self.debet:
+            print('Brak środków!')
+            return self.bilans
+        else: 
+            return KontoBasic.wyplata(self, ile)
+            
+k1 = KontoPremium(0, {'imie': 'Adam', 'nazwisko': 'Słodowy'}, -50)
+k2 = KontoPremium(0, {'imie': 'Izabela', 'nazwisko': 'Kowalsky'}, -100)
 
-    elif op == '-':
-        klient = wyplata(klient)
-    else: 
-        break
-    print("Konto: ", klient['kto'], ':', konto['bilans'])
+k1.wplata(100)
+print(k1.wyplata(200))
 
-
-
-print("Konto:", bilans)
+k2.wplata(10)
+print(k2.wyplata(20))
